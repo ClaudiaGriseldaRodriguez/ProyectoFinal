@@ -2,49 +2,10 @@
      font-variant: normal; 
      text-align: justify;
      font-size: 30px;
-     margin: 2cm
- 
+     margin: 1cm;
     }
-
-
-
-  .subtitulo {  display: flex; text-align: center; font-size: 100%; font-style: italic; border: red 5px dashed;
-    animation-name: neon; animation-duration: 1s; animation-iteration-count: infinite
-                  }
-
-      @keyframes neon { 
-                    0% {border: rgb(196, 178, 17) 5px dashed; }
-                    50% {border: red 5px dashed;}
-                    100% {border: yellowgreen 5px dashed;}}
-
-   h2 {text-align: center; font-size: 200%; font-style: italic; color:rgb(196, 178, 17); border: red 5px dashed;
-    animation-name: neon; animation-duration: 1s; animation-iteration-count: infinite }   
-                
-   .cita { display: flex; text-align: center; font-size: 100%; font-style: italic; }
-   .conejo { float:right; display: flex; animation-name: conejovuela;
-        animation-duration: 3s; animation-iteration-count:infinite; }
-        
-
-    @keyframes conejovuela {
-        from {
-            margin-right: 130%;
-            width: 40%
-          }
-        
-          to {
-            margin-right: 0%;
-            width: 40%;
-          }
-    }
-
- .carouselExampleCaptions { display: flex;}
-
- .calendariodiv {display: flex; flex-direction: column; flex-wrap: wrap;
-     align-items: end;
-      width: 620px ; 
-      text-align: start; margin-left: 3cm;
-      }
-  h3 { text-align: center; color:rgb(196, 178, 17); font-size: xx-large; }
+  .textodelaudio {display: flex; text-align: center; font-size: 100%; font-style: italic; justify-content: space-around; align-items: center; }
+  .audio {display: flex; text-align: center;  justify-content: space-around; align-items: center; }
 
  strong { color:black;
              padding: 3px; 
@@ -55,14 +16,54 @@
              animation-direction: alternate;
       }
 
+
   @keyframes animaciondefecha{ 
-      from {background-color: yellow;} 
-      to {background-color: red; }
+      from {background-color: rgb(241, 241, 44);} 
+      to {background-color: rgb(224, 54, 54);}
     }
-    
-    
+
+
+ 
+ h2 {text-align: center; font-size: 200%; font-style: italic; color:rgb(196, 178, 17); border: red 8px dotted;
+     animation-name: neon; animation-duration: 1s; animation-iteration-count: infinite; width: 100%; padding: 2px;} 
+
+      @keyframes neon { 
+                    0% {border: rgb(196, 178, 17) 8px dotted;  }
+                    25% {border: blue 8px dotted; }
+                    50% {border: red 8px dotted;}
+                    100% {border: yellowgreen 8px dotted;}}
 
     
-   .footer {display: flex; flex-wrap: wrap;
+                
+   .cita { display: flex; text-align: center; font-size: 100%; font-style: italic; justify-content: space-around; align-items: center;}
+   .conejo { float: right;  display: flex; animation-name: conejovuela;
+        animation-duration: 5s; animation-iteration-count:infinite;}
+        
+    @keyframes conejovuela {
+        from {
+            margin-right: 200%;
+            width: 30%
+          }
+        
+          to {
+            margin-right: 0%;
+            width: 30%;
+          }
+    }
+   h3 { display: flex; text-align: center; color:rgb(196, 178, 17); font-size: xx-large; width:auto;} 
+   .calendariodiv {display: flex; text-align: center;  align-items: center;flex-direction: column; 
+    margin-left: 1cm; width: auto; float: none;
+    
+      }
+   .cita2 {display: flex; text-align: center; font-size: 100%; font-style: italic; justify-content: space-around;} 
+   .mapa-animacion {display: flex; align-items: center; flex-direction: column;}
+   .mapa {display: flex;}
+
+.liveAlertPlaceholder {display: flex; text-align: center;  justify-content: space-around; align-items: center;}
+.Confirmaciondeasistencia {display: flex; flex: wrap; flex-direction: column; width: 100%; justify-content: space-around; align-items: center; margin: 1cm; }
+
+.footer {display: flex; flex-wrap: wrap;
      flex-direction:column; align-items: center; 
-     text-align: center;font-size: 50%; margin-top: 3cm;}
+     text-align: center;font-size: 50%; margin-top: 2cm; }
+.iconos {border-radius: 100%; padding: 3%; }
+    
